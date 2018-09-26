@@ -29,6 +29,8 @@ public class GuessingGame {
         while(guess != -1) //if guess is -1, exit the program
         {
             guess = sc.nextInt();
+            if(guess == -1)
+                break;
             numGuess++;     //add to numGuess
             if(guess > num) //if guess is too high: tell the user and add to high
             {

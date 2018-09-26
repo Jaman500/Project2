@@ -26,7 +26,10 @@ public class MilesToKm {
         for(int i = 1; i <= 10; i++)
         {
             //System.out.print(i + "       ");
-            System.out.printf("%-7d %.3f %n", i, i*1.609);
+            System.out.printf("%-7d %.3f %n", i, i*1.609); //printf %-7d: left justified, padded up to 7 times, for an int
+                                                           //%.3f: 3 decimal places, for floating point variables
+                                                           //%n: new line
+                                                           //I love printf
         }
     }
     
