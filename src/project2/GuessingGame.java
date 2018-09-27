@@ -32,7 +32,15 @@ public class GuessingGame {
             if(guess == -1)
                 break;
             numGuess++;     //add to numGuess
-            if(guess > num) //if guess is too high: tell the user and add to high
+            if(guess > 100)
+            {
+                System.out.println("uummmmm.... 1-100, dude...");
+            }
+            else if(guess < 1)
+            {
+                System.out.println("uummmm... 1-100, dude...");
+            }
+            else if(guess > num) //if guess is too high: tell the user and add to high
             {
                 System.out.println("Too high. Guess again!");
                 high++;
